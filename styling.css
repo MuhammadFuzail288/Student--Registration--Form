@@ -1,0 +1,75 @@
+/* styling*/
+:root{
+    --bg: #2a2312;
+    --text: #ffbb02;
+    --header-height: 10vh;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding-top: var(--header-height);
+}
+
+header{
+    position: fixed;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    height: var(--header-height);
+    border: 2px  solid var(--text);
+    border-radius: 5px;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5 );
+}
+
+.heading{
+    font-size: 25px;   
+    font-family: droid;
+}
+
+@media(min-width:768px) {
+    .heading{
+        font-size: 40px;
+    }    
+}
+
+fieldset{
+    border: 1px solid var(--bg);
+    padding: 2%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+    background-color: var(--text);
+    border: 1px solid yellow;
+    color: var(--bg);
+    padding: 0.7%;
+    border-radius: 8px;
+    margin: 5px 0 15px 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.button {
+    background-color: var(--text);
+    color: var(--bg);
+    border: 1px solid black;
+    padding: 1% 2%;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-left: 1%;
+}
+
